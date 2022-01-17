@@ -16,7 +16,7 @@ const signIn = ({ providers }) => {
         />
         <p className='font-xs italic'>
           Приложение не настоящее. Только для персонального обучения и
-          использования в портфолио
+          использования в портфолио.
         </p>
         <div className='mt-40'>
           {checkProviders &&
