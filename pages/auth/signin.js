@@ -1,11 +1,16 @@
 import { getProviders, signIn as signInThroughProvider } from 'next-auth/react';
 import Header from '../../components/Header';
+import Head from 'next/head';
 
 const signIn = ({ providers }) => {
   const checkProviders = providers;
 
   return (
     <>
+      <Head>
+        <title>Вход в Instagram</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <Header />
 
       <div className='flex flex-col items-center justify-center min-h-screen py-2 -mt-20 px-14 text-center'>
